@@ -1,0 +1,9 @@
+# 上游会忽略 micro_ros_src/ 源码；公开仓库把它当作构建输入，因此取消忽略。
+# 只忽略构建产物、预编译库与 toolchain 生成物，避免误伤源码中的同名目录（如 */include）。
+/build/
+/install/
+/micro_ros_dev/
+/micro_ros_src/build/
+/micro_ros_src/install/
+libmicroros.a
+/esp32_toolchain.cmake
